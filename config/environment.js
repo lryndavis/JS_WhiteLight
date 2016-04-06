@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'white-light',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://white-light-vintage.firebaseio.com/',
+    firebase: 'https://white-light-vintage.firebaseio.com',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

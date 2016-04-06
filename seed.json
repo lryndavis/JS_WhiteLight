@@ -3,12 +3,14 @@
     "image": "kimono.jpg",
     "size": "Medium",
     "description": "test",
-    "price": "$68"
+    "price": "$68",
+    "category": "Tops"
   }, {
     "title": "1970's Tooled Leather Bag",
     "image": "bag.jpg",
     "size": "N/A",
     "description": "test",
-    "price": "$65"
+    "price": "$65",
+    "category": "Bags"
   }]
 }
