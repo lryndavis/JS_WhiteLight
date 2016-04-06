@@ -1,0 +1,14 @@
+{ "products": [{
+    "title": "1970's Lace Kimono",
+    "image": "kimono.jpg",
+    "size": "Medium",
+    "description": "test",
+    "price": "$68"
+  }, {
+    "title": "1970's Tooled Leather Bag",
+    "image": "bag.jpg",
+    "size": "N/A",
+    "description": "test",
+    "price": "$65"
+  }]
+}
