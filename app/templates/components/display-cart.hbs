@@ -1,6 +1,6 @@
 <div class="your-cart">
   <h3>Your Cart:</h3>
   {{#each shoppingCart.items as |item|}}
-    {{item.title}} -- {{item.price}}
+    <span class="cart-item">{{item.title}} -- {{item.price}}</span>
   {{/each}}
 </div>
