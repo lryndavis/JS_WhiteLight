@@ -5,5 +5,7 @@
   <P>Size: {{product.size}}</p>
   <p>Description: {{product.description}}</p>
 
-  <button type="button" class="btn btn-default">Add to Cart</button>
+  <button {{action 'addToCart' product}} class="btn btn-default">Add to Cart</button>
 </div>
+
+{{display-cart items=items}}
