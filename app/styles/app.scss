@@ -6,7 +6,7 @@
   font-size: 1.1em;
 }
 
-.header {
+.navbar {
   height: 150px;
 }
 
@@ -14,7 +14,6 @@ h1 {
   font-family: 'Playfair Display';
   font-size: 3em;
   font-style: italic;
-  text-align: center;
 }
 
 a {
@@ -36,4 +35,8 @@ img {
 
 .cart-item {
   display: block;
+}
+
+.cart-link a {
+  text-align: center;
 }
