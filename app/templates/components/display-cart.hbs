@@ -3,4 +3,5 @@
     <span class="cart-item">{{item.title}} -- {{item.price}}</span>
     <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
   {{/each}}
+  <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
 </div>
