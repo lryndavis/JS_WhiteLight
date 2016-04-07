@@ -9,6 +9,10 @@ export default Ember.Route.extend({
       var newProduct = this.store.createRecord('product', params);
       newProduct.save();
       this.transitionTo('admin');
+    },
+    destroyProduct(product) {
+      return product.destroyRecord();
+      this.trasnitionTo('admin');
     }
   }
 });
