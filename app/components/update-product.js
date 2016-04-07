@@ -13,7 +13,8 @@ export default Ember.Component.extend({
         description: this.get('description'),
         size: this.get('size'),
         price: parseInt(this.get('price')),
-        category: this.get('category')
+        category: this.get('category'),
+        quantity: this.get('quantity')
       };
       this.set('updateProductForm', false);
       this.sendAction('updateProduct', product, params);

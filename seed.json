@@ -4,27 +4,31 @@
     "size": "Medium",
     "description": "test",
     "price": "$68",
-    "category": "Tops"
+    "category": "Tops",
+    "quantity": "1"
   }, {
     "title": "1970's Tooled Leather Bag",
     "image": "https://img1.etsystatic.com/102/1/8033764/il_570xN.885548643_lxa1.jpg",
     "size": "N/A",
     "description": "test",
     "price": "$62",
-    "category": "Bags"
+    "category": "Bags",
+    "quantity": "1"
   }, {
     "title": "1970's Ankle Wrap Heels",
     "image": "https://img1.etsystatic.com/069/1/8033764/il_570xN.808914433_42x4.jpg",
     "size": "N/A",
     "description": "test",
     "price": "$68",
-    "category": "Shoes"
+    "category": "Shoes",
+    "quantity": "1"
   }, {
     "title": "Edwardian Military Style Jacket",
     "image": "https://img1.etsystatic.com/064/1/8033764/il_570xN.751724759_bkw7.jpg",
     "size": "N/A",
     "description": "test",
     "price": "$188",
-    "category": "Outerwear"
+    "category": "Outerwear",
+    "quantity": "1"
   }]
 }
