@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('tops');
   this.route('bottoms');
   this.route('shoes');
+  this.route('outerwear');
 });
 
 export default Router;
