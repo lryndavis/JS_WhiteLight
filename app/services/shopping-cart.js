@@ -4,13 +4,17 @@ export default Ember.Service.extend({
   items: [],
   grandTotal: Ember.computed('items.[]', function(){
     var total = 0;
-    var items = this.get('items');
-    for (var i = 0; i < items.length; i++) {
-      total += items[i].get('price');
+    var cartItems = this.get('items');
+    for (var i = 0; i < cartItems.length; i++) {
+      total += cartItems[i].get('price');
     }
     return total;
   }),
-
+  itemsInCart: Ember.computed('items.[]', function(){
+    var cartItems = this.get('items');
+    var totalItems = cartItems.length;
+    return totalItems;
+  }),
   add(item) {
     this.get('items').pushObject(item);
   },
