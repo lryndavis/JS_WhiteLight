@@ -1,4 +1,3 @@
-
-  {{product.title}}
-  <img src="{{product.image}}" class="admin-main-photo"/>
-  <button {{action 'deleteProduct' product}} class="btn btn-danger btn-block">Delete</button>
+<span class="title">{{#link-to 'product' product.id}}{{product.title}}{{/link-to}}</span>
+<img src="{{product.image}}" class="admin-main-photo"/>
+<button {{action 'deleteProduct' product}} class="btn btn-danger btn-block">Delete</button>

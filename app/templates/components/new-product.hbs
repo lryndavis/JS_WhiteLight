@@ -1,44 +1,44 @@
 {{#if addNewProduct}}
   <div class="new-product">
     <form>
-      <div class="form-group">
+      <fieldset class="form-group">
         <label for="title">Product Title:</label>
-        {{input value=title id="title"}}
-      </div>
+        {{input value=title id="title" class="form-control"}}
+      </fieldset>
 
-      <div class="form-group">
+      <fieldset class="form-group">
         <label for="image">Main Image:</label>
-        {{input value=image id="image"}}
-      </div>
+        {{input value=image id="image" class="form-control"}}
+      </fieldset>
 
-      <div class="form-group">
+      <fieldset class="form-group">
         <label for="description">Description:</label>
-        {{input value=description id="description"}}
-      </div>
+        {{input value=description id="description" class="form-control"}}
+      </fieldset>
 
-      <div class="form-group">
+      <fieldset class="form-group">
         <label for="size">Size:</label>
-        {{input value=size id="size"}}
-      </div>
+        {{input value=size id="size" class="form-control"}}
+      </fieldset>
 
-      <div class="form-group">
+      <fieldset class="form-group">
         <label for="price">Price:</label>
-        {{input value=price id="price"}}
-      </div>
+        {{input value=price id="price" class="form-control"}}
+      </fieldset>
 
-      <div class="form-group">
+      <fieldset class="form-group">
         <label for="category">Category:</label>
-        {{input value=category id="category"}}
-      </div>
+        {{input value=category id="category" class="form-control"}}
+      </fieldset>
 
-      <div class="form-group">
+      <fieldset class="form-group">
         <label for="quantity">Quantity:</label>
-        {{input value=quantity id="quantity"}}
-      </div>
+        {{input value=quantity id="quantity" class="form-control"}}
+      </fieldset>
 
-      <button {{action 'saveProduct'}}>Save Product</button>
+      <button class="btn btn-default btn-block" {{action 'saveProduct'}}>Save Product</button>
     </form>
   </div>
   {{else}}
-    <button {{action 'productFormShow'}}>New Product</button>
+    <button class="btn btn-default" {{action 'productFormShow'}}>New Product</button>
   {{/if}}

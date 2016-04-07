@@ -7,7 +7,6 @@ export default Ember.Component.extend({
       this.set('updateProductForm', true);
     },
     updateProduct(product) {
-
       var params = {
         title: this.get('title'),
         image: this.get('image'),
