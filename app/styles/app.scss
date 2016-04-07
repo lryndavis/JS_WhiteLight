@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300italic,300,100italic,100|Playfair+Display:400,400italic,700,700italic,900,900italic);
 
+
+
 * {
   font-family: 'Roboto';
   font-weight: 100;
@@ -20,6 +22,19 @@ h1 {
   font-style: italic;
 }
 
+h3 {
+  font-family: 'Roboto';
+  font-size: 1.5em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -37,6 +52,11 @@ img {
   width: 65%;
 }
 
+//cart div styling
+
+.your-cart {
+  font-weight: '100';
+}
 .cart-item {
   display: block;
 }
@@ -44,6 +64,19 @@ img {
 .cart-link a {
   text-align: center;
 }
+
+.cart-link {
+  font-size: .7em;
+}
+
+.in-cart {
+  border-bottom: 1px solid black;
+  height: 80px;
+  margin-top: 40px;
+  font-size: .9em;
+}
+
+//admin tile styling
 
 .admin-main-photo {
   width: 100%;

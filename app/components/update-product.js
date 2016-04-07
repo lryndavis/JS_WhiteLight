@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         description: this.get('description'),
         size: this.get('size'),
         category: this.get('category'),
+        date: moment().format('MMMM Do YYYY, h:mm:ss a'),
       };
       if (this.get('price')) {
         params.price = parseInt(this.get('price'));

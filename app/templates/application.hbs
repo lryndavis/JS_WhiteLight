@@ -1,7 +1,7 @@
 <div class="container">
   <div class="navbar">
     {{#link-to 'index'}}<h1>Shop</h1>{{/link-to}}
-    {{#link-to 'index'}}<span class="nav-link">NEW ARRIVALS</span>{{/link-to}}
+    {{#link-to 'new'}}<span class="nav-link">NEW ARRIVALS</span>{{/link-to}}
     {{#link-to 'category' 'dresses'}}<span class="nav-link">DRESSES</span>{{/link-to}}
     {{#link-to 'category' 'tops'}}<span class="nav-link">TOPS</span>{{/link-to}}
     {{#link-to 'category' 'bottoms'}}<span class="nav-link">BOTTOMS</span>{{/link-to}}
@@ -10,7 +10,7 @@
     {{#link-to 'category' 'shoes'}}<span class="nav-link">SHOES</span>{{/link-to}}
     {{#link-to 'category' 'accoutrement'}}<span class="nav-link">ACCOUTREMENT</span>{{/link-to}}
     {{#link-to 'admin'}}<span class="nav-link">ADMIN PORTAL</span>{{/link-to}}
-    {{cart-quantity}}
+    <span class="shopping-bag">{{cart-quantity}}</span>
 
   </div>
 </div>

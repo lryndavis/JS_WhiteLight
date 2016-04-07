@@ -1,9 +1,11 @@
 <div class="your-cart">
-  <h2>Items: {{shoppingCart.itemsInCart}}</h2>
   {{#each shoppingCart.items as |item|}}
-    <span class="cart-item">{{item.title}} -- ${{item.price}}</span>
-    <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
+    <div class="in-cart">
+      <span>{{item.title}} -- ${{item.price}}</span>
+      <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
+    </div>
   {{/each}}
-    <h2>Total: ${{shoppingCart.grandTotal}}.00</h2>
+    <h4>Items: {{shoppingCart.itemsInCart}}</h4>
+    <h4>Total: ${{shoppingCart.grandTotal}}.00</h4>
     <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
 </div>
