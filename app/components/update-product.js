@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         size: this.get('size'),
         price: parseInt(this.get('price')),
         category: this.get('category'),
-        quantity: this.get('quantity')
+        quantity: parseInt(this.get('quantity'))
       };
       this.set('updateProductForm', false);
       this.sendAction('updateProduct', product, params);
