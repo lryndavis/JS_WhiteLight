@@ -1,0 +1,39 @@
+{{#if addNewProduct}}
+  <div class="new-product">
+    <form>
+      <div class="form-group">
+        <label for="title">Product Title:</label>
+        {{input value=title id="title"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Main Image:</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description:</label>
+        {{input value=description id="description"}}
+      </div>
+
+      <div class="form-group">
+        <label for="size">Size:</label>
+        {{input value=size id="size"}}
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price:</label>
+        {{input value=price id="price"}}
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category:</label>
+        {{input value=category id="category"}}
+      </div>
+
+      <button {{action 'saveProduct'}}>Save Product</button>
+    </form>
+  </div>
+  {{else}}
+    <button {{action 'productFormShow'}}>New Product</button>
+  {{/if}}

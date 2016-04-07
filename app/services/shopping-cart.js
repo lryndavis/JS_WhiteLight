@@ -11,5 +11,10 @@ export default Ember.Service.extend({
   },
   empty() {
     this.get('items').setObjects([]);
-  }
+  },
+  totalCost() {
+  this.get('items').reduce(function(total, item){
+    return total + item.price;
+  }, 0);
+}
 });
