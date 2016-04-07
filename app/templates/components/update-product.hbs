@@ -1,0 +1,40 @@
+{{#if updateProductForm}}
+  <h4>Update {{product.title}}</h4>
+    <div>
+      <form>
+        <fieldset class="form-group">
+          <label for="title">Title:</label>
+          {{input value=title id="title" placeholder=product.title class="form-control"}}
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="image">Image:</label>
+          {{input value=image id="image" placeholder=product.image class="form-control"}}
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="description">Description:</label>
+          {{input value=description id="description" placeholder=product.description class="form-control"}}
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="size">Size:</label>
+          {{input value=size id="size" placeholder=product.size class="form-control"}}
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="price">Price:</label>
+          {{input value=price id="price" placeholder=product.price class="form-control"}}
+        </fieldset>
+
+        <fieldset class="form-group">
+          <label for="category">Category:</label>
+          {{input value=category id="category" placeholder=product.category class="form-control"}}
+        </fieldset>
+
+        <button class="btn btn-default" {{action 'updateProduct' product}}>Save Update</button>
+      </form>
+    </div>
+    {{else}}
+      <button class="button" {{action 'updateProductForm'}}>Edit Product Info</button>
+    {{/if}}
