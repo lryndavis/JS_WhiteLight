@@ -2,6 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   items: [],
+  grandTotal: Ember.computed('items.[]', function(){
+    var total = 0;
+    var items = this.get('items');
+    for (var i = 0; i < items.length; i++) {
+      total += items[i].get('price');
+    }
+    return total;
+  }),
 
   add(item) {
     this.get('items').pushObject(item);
@@ -11,10 +19,5 @@ export default Ember.Service.extend({
   },
   empty() {
     this.get('items').setObjects([]);
-  },
-  totalCost() {
-  this.get('items').reduce(function(total, item){
-    return total + item.price;
-  }, 0);
-}
+  }
 });

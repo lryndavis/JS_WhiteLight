@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
         description: this.get('description'),
         size: this.get('size'),
-        price: this.get('price'),
+        price: parseInt(this.get('price')),
         category: this.get('category'),
       };
       this.set('addNewProduct', false);

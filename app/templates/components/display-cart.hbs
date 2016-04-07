@@ -4,4 +4,5 @@
     <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
   {{/each}}
   <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
+    <h2>Total: {{shoppingCart.grandTotal}}</h2>
 </div>
