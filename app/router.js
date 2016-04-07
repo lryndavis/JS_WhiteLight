@@ -10,6 +10,11 @@ Router.map(function() {
   this.route('product', {path: '/product/:product_id'});
   this.route('cart');
   this.route('admin');
+  this.route('bags');
+  this.route('dresses');
+  this.route('tops');
+  this.route('bottoms');
+  this.route('shoes');
 });
 
 export default Router;

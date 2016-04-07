@@ -25,10 +25,42 @@
   }, {
     "title": "Edwardian Military Style Jacket",
     "image": "https://img1.etsystatic.com/064/1/8033764/il_570xN.751724759_bkw7.jpg",
-    "size": "N/A",
+    "size": "Medium",
     "description": "test",
     "price": "$188",
     "category": "Outerwear",
+    "quantity": "1"
+  }, {
+    "title": "70's Maxi Dress",
+    "image": "https://img1.etsystatic.com/100/1/8033764/il_fullxfull.831838273_d0qp.jpg",
+    "size": "Small",
+    "description": "test",
+    "price": "$198",
+    "category": "Dresses",
+    "quantity": "1"
+  }, {
+    "title": "Suede Fringe Jacket",
+    "image": "https://img1.etsystatic.com/075/0/8033764/il_fullxfull.823369677_h4hr.jpg",
+    "size": "Medium",
+    "description": "test",
+    "price": "$122",
+    "category": "Outerwear",
+    "quantity": "1"
+  }, {
+    "title": "70's Maxi Skirt",
+    "image": "https://img1.etsystatic.com/073/1/8033764/il_fullxfull.809373625_f8j5.jpg",
+    "size": "Extra Small",
+    "description": "test",
+    "price": "$108",
+    "category": "Bottoms",
+    "quantity": "1"
+    }, {
+    "title": "Tooled Leather Belt",
+    "image": "https://img1.etsystatic.com/022/0/8033764/il_fullxfull.542125987_quot.jpg",
+    "size": "Extra Small",
+    "description": "test",
+    "price": "$48",
+    "category": "Accoutrement",
     "quantity": "1"
   }]
 }
