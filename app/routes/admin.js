@@ -18,7 +18,9 @@ export default Ember.Route.extend({
           product.set(key, params[key]);
         }
       });
-      product.save();
+      product.save().catch(function(e) {
+        console.log(e.errors);
+      });
     }
   }
 });
