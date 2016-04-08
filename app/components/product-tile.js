@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sortProperties: ['price:desc', 'price:asc'],
+  sortProperties: ['price:desc', 'price:asc', 'date:desc'],
   sortedProducts: Ember.computed.sort('products', 'sortProperties'),
 
   actions: {
