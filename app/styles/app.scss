@@ -85,3 +85,25 @@ img {
 .admin-item {
   padding: 5px;
 }
+
+
+//product tile
+
+.buttons {
+  font-size: .7em;
+}
+
+.sort-by {
+  font-weight: 300;
+}
+
+.low {
+  border-right: 1px solid black;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.high {
+  padding-left: 5px;
+  cursor: pointer;
+}

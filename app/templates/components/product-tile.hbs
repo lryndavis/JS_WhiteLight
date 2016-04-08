@@ -1,6 +1,8 @@
-<button {{action "sortBy" "price:asc"}}>Sort By Price ASC</button>
-<button {{action "sortBy" "price:desc"}}>Sort By Price DESC</button>
-
+<div class="buttons">
+  <span class="sort-by">Sort By: Price </span>
+  <span class="low" {{action "sortBy" "price:asc"}}>Low to High</span>
+  <span class="high" {{action "sortBy" "price:desc"}}>Low to High</span>
+</div>
 
 {{#each sortedProducts as |product|}}
 <div class="col-md-6">
