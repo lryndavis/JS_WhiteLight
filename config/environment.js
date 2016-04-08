@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     firebase: 'https://white-light-vintage.firebaseio.com',
+    torii: { sessionServiceName: 'session' },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

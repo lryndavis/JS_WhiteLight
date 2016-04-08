@@ -11,6 +11,8 @@ Router.map(function() {
   this.route('admin');
   this.route('category', {path: '/category/:category_id'});
   this.route('new');
+  this.route('sign-up');
+  this.route('sign-in');
 });
 
 export default Router;
