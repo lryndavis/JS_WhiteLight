@@ -6,6 +6,6 @@
     </div>
   {{/each}}
     <h4>Items: {{shoppingCart.itemsInCart}}</h4>
-    <h4>Total: ${{shoppingCart.grandTotal}}.00</h4>
+    <h4>Total: {{shoppingCart.grandTotal}}</h4>
     <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
 </div>
