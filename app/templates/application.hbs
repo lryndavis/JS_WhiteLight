@@ -1,6 +1,14 @@
 <div class="container">
   <div class="navbar">
     {{#link-to 'index'}}<h1>Shop</h1>{{/link-to}}
+    {{#if session.isAuthenticated}}
+                <button
+                    class='btn btn-default navbar-btn'
+                    {{action 'signOut'}}
+                >
+                    {{fa-icon 'sign-out'}} Sign Out
+                </button>
+            {{/if}}
     {{#link-to 'new'}}<span class="nav-link">NEW ARRIVALS</span>{{/link-to}}
     {{#link-to 'category' 'dresses'}}<span class="nav-link">DRESSES</span>{{/link-to}}
     {{#link-to 'category' 'tops'}}<span class="nav-link">TOPS</span>{{/link-to}}
@@ -15,4 +23,5 @@
 </div>
 <div class="container">
   {{outlet}}
+
 </div>
