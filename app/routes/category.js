@@ -6,5 +6,10 @@ export default Ember.Route.extend({
       orderBy: 'category',
       equalTo: params.category_id
     });
+  },
+  actions: {
+    sortBy: function(sortProperties) {
+      this.set('sortProperties', [sortProperties]);
+    }
   }
 });
