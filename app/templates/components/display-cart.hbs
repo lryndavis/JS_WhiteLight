@@ -5,7 +5,7 @@
       <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
     </div>
   {{/each}}
-    <h4>Items: {{shoppingCart.itemsInCart}}</h4>
+    <h4>Items: {{shoppingCart.items.length}}</h4>
     <h4>Total: {{shoppingCart.grandTotal}}</h4>
     <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
 </div>
