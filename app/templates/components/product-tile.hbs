@@ -1,7 +1,7 @@
 <div class="col-md-6">
   <img src={{product.image}} alt="featured-image"/>
   <span class="title">{{#link-to 'product' product.id}}{{product.title}}{{/link-to}}</span>
-  <span class="price">${{product.price}}.00</span>
+  <span class="price">{{convert-currency product}}</span>
 </div>
 
 <h3 class="question-link">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h3>

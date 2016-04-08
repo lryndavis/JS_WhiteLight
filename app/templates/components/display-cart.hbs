@@ -1,7 +1,7 @@
 <div class="your-cart">
   {{#each shoppingCart.items as |item|}}
     <div class="in-cart">
-      <span>{{item.title}} -- ${{item.price}}</span>
+      <span>{{item.title}} -- {{convert-currency item}}</span>
       <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
     </div>
   {{/each}}
