@@ -2,7 +2,7 @@
   <span class="sort-by">Sort By: </span>
   <span class="low" {{action "sortBy" "price:asc"}}>Price - Low to High</span>
   <span class="high" {{action "sortBy" "price:desc"}}>Price -  High to Low</span>
-  <span class="new" {{action "sortBy" "date:desc"}}>Newest</span>
+  <span class="new" {{action "sortBy" "date:asc"}}>Newest</span>
 </div>
 
 {{#each sortedProducts as |product|}}
