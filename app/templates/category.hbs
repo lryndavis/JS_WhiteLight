@@ -1,3 +1,13 @@
 <div class="container">
-  {{product-tile products=model}}
+  <div class="col-md-2">
+    <div class="side-nav">
+      {{#link-to 'category' 'dresses'}}<span class="side-nav-link">DRESSES</span>{{/link-to}}
+      {{#link-to 'category' 'tops'}}<span class="side-nav-link">TOPS</span>{{/link-to}}
+      {{#link-to 'category' 'bottoms'}}<span class="side-nav-link">BOTTOMS</span>{{/link-to}}
+
+    </div>
+  </div>
+  <div class="col-md-10">
+    {{product-tile products=model}}
+  </div>
 </div>
