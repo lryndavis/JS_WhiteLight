@@ -10,8 +10,17 @@ export default Ember.Component.extend({
       var params = {
         title: this.get('title'),
         image: this.get('image'),
+        image2: this.get('image2'),
+        image3: this.get('image3'),
+        image4: this.get('image4'),
+        image5: this.get('image5'),
         description: this.get('description'),
         size: this.get('size'),
+        materials: this.get('materials'),
+        condition: this.get('condition'),
+        label: this.get('label'),
+        era: this.get('era'),
+        measurements: this.get('measurements'),
         category: this.get('category'),
         date: moment().format('MMMM Do YYYY, h:mm:ss a'),
       };
