@@ -8,18 +8,91 @@
   font-size: 1.1em;
 }
 
+// https://img0.etsystatic.com/068/1/8033764/il_fullxfull.794534046_qeqb.jpg     poncho
+// https://img0.etsystatic.com/100/1/8033764/il_570xN.832061350_7riw.jpg     kimono
+// https://img0.etsystatic.com/061/0/8033764/il_fullxfull.779085696_11pg.jpg   white blouse
+// https://img1.etsystatic.com/068/0/8033764/il_fullxfull.765278815_5zjx.jpg fringe suede
+// https://img0.etsystatic.com/050/0/8033764/il_fullxfull.726672842_75fa.jpg red kaftan
+// https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
+// https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
+
+.gallery {
+  width: 100%;
+  border-top: .5px solid black;
+}
+
+.background-img {
+  width: 600px;
+  height: 80vh;
+  margin-right: 90px;
+  background-image: url("https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.background-img2 {
+  margin-top: 70px;
+  height: 60vh;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url("https://img1.etsystatic.com/063/1/8033764/il_fullxfull.753573557_n199.jpg");
+}
+
 .navbar {
-  height: 250px;
+  height: 135px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.shopping-bag {
+  font-size: .85em;
+  text-align: right;
+  margin-left: auto;
+}
+
+span.sign-out {
+  text-align: left;
+  font-size: .7em;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+
+.side-nav-link {
+  font-size: .8em;
+  display: block;
+
 }
 
 .nav-link {
   padding-right: 10px;
+  font-size: .7em;
+}
+
+.mini-links {
+  display: flex;
+}
+
+.link-bar {
+  // border-top: 1px solid black;
+  padding: 10px;
+  width: 100%;
+
+}
+
+.side-nav {
+border-right: 1px solid black;
+height: 100vh;
 }
 
 h1 {
   font-family: 'Playfair Display';
-  font-size: 3em;
+  font-size: 2em;
   font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -34,6 +107,7 @@ h4 {
   font-weight: 100;
   text-transform: uppercase;
 }
+
 
 a {
   text-decoration: none;
@@ -61,9 +135,7 @@ img {
   display: block;
 }
 
-.cart-link a {
-  text-align: center;
-}
+
 
 .cart-link {
   font-size: .7em;

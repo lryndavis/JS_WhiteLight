@@ -1,12 +1,14 @@
-<h1>Admin Portal</h1>
-<h2>Add new Product</h2>
-{{new-product saveProduct="saveProduct"}}
+<div class='container'>
+  <h1>Admin Portal</h1>
+  <h2>Add new Product</h2>
+  {{new-product saveProduct="saveProduct"}}
 
-<h3>Currently in Stock</h3>
+  <h3>Currently in Stock</h3>
 
-  {{#each model as |product|}}
-  <div class="admin-item col-md-4">
-    {{admin-tile product=product destroyProduct="destroyProduct"}}
-    {{update-product product=product updateProduct="updateProduct"}}
-  </div>
-  {{/each}}
+    {{#each model as |product|}}
+    <div class="admin-item col-md-4">
+      {{admin-tile product=product destroyProduct="destroyProduct"}}
+      {{update-product product=product updateProduct="updateProduct"}}
+    </div>
+    {{/each}}
+</div>
