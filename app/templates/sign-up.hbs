@@ -1,33 +1,40 @@
 <div class="container">
-<h1>Sign Up</h1>
-{{input
-    type='text'
-    class='form-control'
-    value=email
-    placeholder='email'
-}}
-{{input
-    type='password'
-    class='form-control'
-    value=password
-    placeholder='password'
-}}
-{{input
-    type='text'
-    class='form-control'
-    value=firstName
-    placeholder='firstName'
-}}
-{{input
-    type='text'
-    class='form-control'
-    value=lastName
-    placeholder='lastName'
-}}
-<button
-    class='btn btn-default'
-    {{action 'signUp'}}
->
-    {{fa-icon 'user-plus'}} Sign Up
-</button>
+  <div class="col-md-4">
+    <div class="page-header">
+      <h1>Sign Up</h1>
+    </div>
+      <fieldset class="form-group">
+        {{input
+            type='text'
+            class='form-control'
+            value=email
+            placeholder='email'
+        }}
+      </fieldset>
+      <fieldset class="form-group">
+          {{input
+              type='password'
+              class='form-control'
+              value=password
+              placeholder='password'
+          }}
+      </fieldset>
+      <fieldset class="form-group">
+      {{input
+          type='text'
+          class='form-control'
+          value=firstName
+          placeholder='firstName'
+      }}
+    </fieldset>
+    <fieldset class="form-group">
+      {{input
+          type='text'
+          class='form-control'
+          value=lastName
+          placeholder='lastName'
+      }}
+    </fieldset>
+    <button class='btn btn-default btn-block' {{action 'signUp'}} >Sign Up</button>
+  </div>
 </div>
