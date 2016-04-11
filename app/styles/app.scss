@@ -18,11 +18,17 @@
 
 .gallery {
   width: 100%;
-  border-top: .5px solid black;
+  border-top: .5px solid #bfbfbf;
 }
 
 .logo {
   width: 250px;
+}
+
+.shop-by {
+  font-family: 'Playfair Display';
+  font-size: 1.2em;
+  font-style: italic;
 }
 
 
@@ -84,11 +90,10 @@ span.sign-out {
   // border-top: 1px solid black;
   padding: 0 10px 10px 10px;
   width: 100%;
-
 }
 
 .side-nav {
-border-right: 1px solid black;
+border-right: 1px solid #bfbfbf;
 height: 100vh;
 }
 
@@ -164,6 +169,11 @@ img {
 }
 
 
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 //product tile
 
 .buttons {
@@ -183,7 +193,7 @@ img {
 .high {
   padding-left: 5px;
   cursor: pointer;
-  border-right: 1px solid black;
+  border-right: 1px solid #bfbfbf;
   padding-right: 5px;
 }
 
