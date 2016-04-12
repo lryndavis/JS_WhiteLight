@@ -1,8 +1,15 @@
 <div class="gallery">
   <div class="container">
-    <div class="col-md-8 background-img">
-    </div>
-    <div class="col-md-4 background-img2">
+    <div class="col-md-8">
+      {{#each pagedContent as |product|}}
+        <div class="col-md-6 product-tile">
+          {{#link-to 'product' product.id}}<img src={{product.image}} alt="featured-image"/>{{/link-to}}
+          <span class="title">{{#link-to 'product' product.id}}{{product.title}}{{/link-to}}</span>
+          <span class="price">{{convert-currency product}}</span>
+        </div>
+        {{/each}}
+      </div>
+      <div class="col-md-4 background-img2">
     </div>
   </div>
 </div>
