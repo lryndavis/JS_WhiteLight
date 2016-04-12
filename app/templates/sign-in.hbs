@@ -3,21 +3,9 @@
     <div class='page-header'>
       <h1>Sign In</h1>
     </div>
-      <fieldset class="form-group">
-      {{input
-          type='text'
-          class='form-control'
-          value=email
-          placeholder='email'
-      }}
+      <fieldset class="form-group">{{input type='text' class='form-control' value=email placeholder='email'}}
       </fieldset>
-      <fieldset class="form-group">
-      {{input
-          type='password'
-          class='form-control'
-          value=password
-          placeholder='password'
-      }}
+      <fieldset class="form-group">{{input type='password' class='form-control' value=password placeholder='password'}}
       </fieldset>
       {{#if session.isWorking}}
       <button class='btn btn-default' disabled='disabled'>

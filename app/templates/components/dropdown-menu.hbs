@@ -1,0 +1,17 @@
+<span class="dropdown {{if dropdownOpen 'open'}} ">
+  <a class="shop-dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown" {{action 'toggleDropdown'}}>
+    SHOP <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    {{#link-to 'new'}}<span class="dropdown-link">NEW ARRIVALS</span>{{/link-to}}
+    {{#link-to 'category' 'dresses'}}<span class="dropdown-link">DRESSES</span>{{/link-to}}
+    {{#link-to 'category' 'tops'}}<span class="dropdown-link">TOPS</span>{{/link-to}}
+    {{#link-to 'category' 'bottoms'}}<span class="dropdown-link">BOTTOMS</span>{{/link-to}}
+    {{#link-to 'category' 'outerwear'}}<span class="dropdown-link">OUTERWEAR</span>{{/link-to}}
+    {{#link-to 'category' 'bags'}}<span class="dropdown-link">BAGS</span>{{/link-to}}
+    {{#link-to 'category' 'shoes'}}<span class="dropdown-link">SHOES</span>{{/link-to}}
+    {{#link-to 'category' 'accoutrement'}}<span class="dropdown-link">ACCOUTREMENT</span>{{/link-to}}
+  </ul>
+</span>
+{{#link-to 'admin'}}<span class="nav-link">ABOUT</span>{{/link-to}}
+{{#link-to 'contact'}}<span class="nav-link">CONTACT</span>{{/link-to}}

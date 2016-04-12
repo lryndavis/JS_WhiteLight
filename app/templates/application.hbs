@@ -12,12 +12,11 @@
     </div>
     {{#link-to 'index'}}<img class="logo" src="/wl-logo.jpg" alt="logo"/>{{/link-to}}
     <div class="link-bar">
-      {{#link-to 'new'}}<span class="nav-link">SHOP</span>{{/link-to}}
-      {{#link-to 'admin'}}<span class="nav-link">ABOUT</span>{{/link-to}}
-      {{#link-to 'contact'}}<span class="nav-link">CONTACT</span>{{/link-to}}
+      {{dropdown-menu}}
     </div>
   </div>
 </div>
+
 <div class="main-container">
   {{outlet}}
 </div>

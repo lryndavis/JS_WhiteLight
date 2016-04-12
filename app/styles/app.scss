@@ -1,4 +1,6 @@
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300italic,300,100italic,100|Playfair+Display:400,400italic,700,700italic,900,900italic);
+
 
 * {
   font-family: 'Roboto';
@@ -15,6 +17,20 @@
 // https://img0.etsystatic.com/050/0/8033764/il_fullxfull.726672842_75fa.jpg red kaftan
 // https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
 // https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
+
+.dropdown-link {
+  font-size: 1em;
+  display: block;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-weight: 300;
+}
+
+.dropdown a {
+  padding-right: 7px;
+  font-size: .75em;
+  text-decoration: none;
+}
 
 .empty-cart {
   text-align: center;
