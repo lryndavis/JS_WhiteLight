@@ -23,7 +23,6 @@ export default Ember.Component.extend({
         measurements: this.get('measurements'),
         category: this.get('category'),
         date: moment().format('MMMM Do YYYY, h:mm:ss a'),
-        stock: this.get(true),
       };
       if (this.get('price')) {
         params.price = parseInt(this.get('price'));
