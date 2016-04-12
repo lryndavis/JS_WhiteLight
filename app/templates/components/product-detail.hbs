@@ -1,5 +1,3 @@
-<div class="main-container product">
-  {{side-nav}}
   <div class="col-md-4 product-info">
     <h2 class="product-name">{{product.title}}</h2>
     <p class="product-price">{{convert-currency product}}</p>
@@ -12,8 +10,6 @@
     <p><span class="attr">Measurements: </span>{{product.measurements}}</p>
     <button {{action 'addToCart' product}} class="add-cart btn btn-default btn-block">ADD TO CART</button>
   </div>
-  <div class="featured-div col-md-6">
+  <div class="col-md-6">
     <img src={{product.image}} class="featured-img" alt="featured-image"/>
   </div>
-
-</div>
