@@ -1,11 +1,22 @@
 <div class="your-cart">
   {{#each shoppingCart.items as |item|}}
     <div class="in-cart">
-      <span>{{item.title}} -- {{convert-currency item}}</span>
+      <span><img class="thumbnail" src='{{item.image}}' /></span>
+    <div class="left col-md-6">
+      <span>{{item.title}}</span>
+    </div>
+    <div class="right col-md-6">
+      <span>{{convert-currency item}}</span>
       <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
     </div>
+  </div>
   {{/each}}
-    <h4>Items: {{shoppingCart.items.length}}</h4>
-    <h4>Total: {{shoppingCart.grandTotal}}</h4>
+  <div class="left col-md-6">
+    <span class="checkout-totals">Items: </span><span class="totals">{{shoppingCart.items.length}} / </span>
+    <span class="checkout-totals">Total: </span><span class="totals">{{shoppingCart.grandTotal}}</span>
+  </div>
+  <div class="right col-md-6">
     <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
+    <button class="btn btn-default">Proceed to Checkout</button>
+  </div>
 </div>

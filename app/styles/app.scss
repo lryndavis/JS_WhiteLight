@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300italic,300,100italic,100|Playfair+Display:400,400italic,700,700italic,900,900italic);
 
-
-
 * {
   font-family: 'Roboto';
   font-weight: 100;
   font-size: 1.1em;
 }
+
+
 
 // https://img0.etsystatic.com/068/1/8033764/il_fullxfull.794534046_qeqb.jpg     poncho
 // https://img0.etsystatic.com/100/1/8033764/il_570xN.832061350_7riw.jpg     kimono
@@ -15,6 +15,52 @@
 // https://img0.etsystatic.com/050/0/8033764/il_fullxfull.726672842_75fa.jpg red kaftan
 // https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
 // https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
+
+.thumbnail {
+  width: 200px;
+  border: none;
+  border-radius: 5%;
+}
+
+.in-cart {
+  border-bottom: 1px solid black;
+  height: 250px;
+  margin-top: 40px;
+  font-size: .9em;
+}
+
+.right {
+  padding-top: 10px;
+  text-align: right;
+  button {
+    width: 200px;
+  }
+}
+
+.checkout-totals {
+  font-family: 'Playfair Display';
+  font-style: italic;
+}
+
+.left {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.your-cart h4 {
+  font-family: 'Playfair Display';
+  font-style: italic;
+}
+
+.cart-checkout h3 {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-size: 1.8em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
 
 .no-products {
   text-align: center;
@@ -32,7 +78,7 @@
 }
 
 .pagination-centered {
-  font-size: .3em;
+  font-size: .4em;
   text-align: center;
 }
 
@@ -97,7 +143,7 @@
 }
 
 .logo {
-  width: 250px;
+  width: 275px;
 }
 
 .product-tile {
@@ -241,12 +287,7 @@ img {
   font-size: .7em;
 }
 
-.in-cart {
-  border-bottom: 1px solid black;
-  height: 80px;
-  margin-top: 40px;
-  font-size: .9em;
-}
+
 
 //admin tile styling
 
