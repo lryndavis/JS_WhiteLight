@@ -18,4 +18,5 @@ export default DS.Model.extend({
   category: DS.attr(),
   quantity: DS.attr(),
   date: DS.attr(),
+  stock: DS.attr('boolean'),
 });

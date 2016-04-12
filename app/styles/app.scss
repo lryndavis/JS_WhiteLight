@@ -16,6 +16,11 @@
 // https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
 // https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
 
+.main-container {
+  margin-bottom: 80px;
+}
+
+
 .featured-img {
   padding-top: 10px;
 }
@@ -37,7 +42,7 @@
 }
 
 .product-info p {
-  font-size: .7em;
+  font-size: .65em;
   padding-left: 10px;
 }
 
@@ -137,6 +142,7 @@ span.sign-out {
 .side-nav-link {
   font-size: .6em;
   display: block;
+  padding-bottom: 5px;
 
 }
 
@@ -240,7 +246,9 @@ img {
 //product tile
 
 .buttons {
-  font-size: .7em;
+  font-size: .5em;
+  text-align: right;
+  margin-right: 40px;
 }
 
 .sort-by {
