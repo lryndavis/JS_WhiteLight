@@ -16,6 +16,9 @@ Router.map(function() {
   this.authenticatedRoute('welcome');
   this.route('about');
   this.route('contact');
+  this.route('era', {path: '/era/:era_id'});
+  this.route('contact');
+  this.route('size', {path: '/size/:size_id'});
 });
 
 export default Router;
