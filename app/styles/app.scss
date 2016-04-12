@@ -16,6 +16,38 @@
 // https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
 // https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
 
+.product-side-nav h2 {
+  margin-top: 0;
+}
+
+.product-side-nav {
+  border-right: 1px solid #bfbfbf;
+  height: 650px;
+}
+
+.product-info p {
+  font-size: .8em;
+  padding-left: 10px;
+}
+
+.product-name {
+  font-family: 'Playfair Display';
+  font-size: 1.2em;
+  margin-top: 0;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.product-price {
+  font-weight: 300;
+  padding-bottom: 10px;
+  border-bottom: 1px solid  #bfbfbf;
+}
+
+.attr {
+  font-weight: 300;
+}
+
 .gallery {
   width: 100%;
   border-top: .5px solid #bfbfbf;
@@ -50,6 +82,7 @@
 
 .product-gallery {
   padding-top: 20px;
+  padding-left: 20px;
 }
 
 .background-img {
@@ -115,7 +148,7 @@ span.sign-out {
 .side-nav {
 border-right: 1px solid #bfbfbf;
 height: 100vh;
-padding-right: 25px;
+width: 175px;
 }
 
 h1 {
@@ -154,7 +187,12 @@ img {
 }
 
 .featured-img {
-  width: 65%;
+  width: 800px;
+  padding-top: 10px;
+}
+
+.thumb-img {
+  width: 250px;
 }
 
 //cart div styling
@@ -166,7 +204,10 @@ img {
   display: block;
 }
 
-
+.row {
+  padding-top: 15px;
+  text-align: right;
+}
 
 .cart-link {
   font-size: .7em;

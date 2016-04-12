@@ -1,9 +1,33 @@
-<div class="product">
-  <h2>{{product.title}}</h2>
-  <p>{{convert-currency product}}</p>
-  <img src={{product.image}} class="featured-img" alt="featured-image"/>
-  <P>Size: {{product.size}}</p>
-  <p>Description: {{product.description}}</p>
+<div class="main-container product">
+  <div class="product-side-nav col-md-2">
+    <h2 class="shop-by">Shop:</h2>
+    {{#link-to 'new'}}<span class="side-nav-link">NEW ARRIVALS</span>{{/link-to}}
+    {{#link-to 'category' 'dresses'}}<span class="side-nav-link">DRESSES</span>{{/link-to}}
+    {{#link-to 'category' 'tops'}}<span class="side-nav-link">TOPS</span>{{/link-to}}
+    {{#link-to 'category' 'bottoms'}}<span class="side-nav-link">BOTTOMS</span>{{/link-to}}
+    {{#link-to 'category' 'outerwear'}}<span class="side-nav-link">OUTERWEAR</span>{{/link-to}}
+    {{#link-to 'category' 'bags'}}<span class="side-nav-link">BAGS</span>{{/link-to}}
+    {{#link-to 'category' 'shoes'}}<span class="side-nav-link">SHOES</span>{{/link-to}}
+    {{#link-to 'category' 'accoutrement'}}<span class="side-nav-link">ACCOUTREMENT</span>{{/link-to}}
+  </div>
+  <div class="col-md-4 product-info">
+    <h2 class="product-name">{{product.title}}</h2>
+    <p class="product-price">{{convert-currency product}}</p>
+    <p><span class="attr">Era: </span>{{product.era}}</p>
+    <p><span class="attr">Size: </span>{{product.size}}</p>
+    <p><span class="attr">Label: </span>{{product.label}}</p>
+    <p><span class="attr">Condition: </span>{{product.condition}}</p>
+    <p><span class="attr">Materials: </span>{{product.materials}}</p>
+    <p><span class="attr">Description: </span>{{product.description}}</p>
+    <p><span class="attr">Measurements: </span>{{product.measurements}}</p>
+  </div>
+  <div class="featured-div col-md-6">
+    <!-- <div class="row">
+      <img src={{product.image}} class="thumb-img" alt="featured-image"/>
+      <img src={{product.image}} class="thumb-img" alt="featured-image"/>
+      <img src={{product.image}} class="thumb-img" alt="featured-image"/>
+    </div> -->
+    <img src={{product.image}} class="featured-img" alt="featured-image"/>
+  </div>
 
-  <button {{action 'addToCart' product}} class="btn btn-default">Add to Cart</button>
 </div>
