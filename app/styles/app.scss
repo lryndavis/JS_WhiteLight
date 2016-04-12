@@ -16,10 +16,23 @@
 // https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
 // https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
 
+.no-products {
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 50px;
+}
 
+.paginated-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+}
 
 .pagination-centered {
-  font-size: .4em;
+  font-size: .3em;
   text-align: center;
 }
 
@@ -30,7 +43,6 @@
 .main-container {
   margin-bottom: 80px;
 }
-
 
 .featured-img {
   padding-top: 10px;

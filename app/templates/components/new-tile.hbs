@@ -1,4 +1,5 @@
 {{#if sortedProducts}}
+  <div class="paginated-page">
   {{#each pagedContent as |product|}}
     <div class="col-md-6 product-tile">
       {{#link-to 'product' product.id}}<img src={{product.image}} alt="featured-image"/>{{/link-to}}
@@ -6,9 +7,8 @@
       <span class="price">{{convert-currency product}}</span>
     </div>
   {{/each}}
-  <div class="page-number">
-    {{page-numbers content=pagedContent}}
-  </div>
+</div>
+{{page-numbers content=pagedContent}}
   {{else}}
   <h1 class="no-products">Sorry, no products match this description!</h1>
 {{/if}}
