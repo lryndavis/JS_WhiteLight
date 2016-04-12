@@ -1,22 +1,30 @@
-<div class="your-cart">
-  {{#each shoppingCart.items as |item|}}
-    <div class="in-cart">
-      <span><img class="thumbnail" src='{{item.image}}' /></span>
+{{#if shoppingCart.items}}
+  <div class="your-cart">
+    <h3>Your Shopping Bag:</h3>
+    {{#each shoppingCart.items as |item|}}
+      <div class="in-cart">
+        <span><img class="thumbnail" src='{{item.image}}' /></span>
+      <div class="left col-md-6">
+        <span>{{item.title}}</span>
+      </div>
+      <div class="right col-md-6">
+        <span>{{convert-currency item}}</span>
+        <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
+      </div>
+    </div>
+    {{/each}}
     <div class="left col-md-6">
-      <span>{{item.title}}</span>
+      <span class="checkout-totals">Items: </span><span class="totals">{{shoppingCart.items.length}} / </span>
+      <span class="checkout-totals">Total: </span><span class="totals">{{shoppingCart.grandTotal}}</span>
     </div>
     <div class="right col-md-6">
-      <span>{{convert-currency item}}</span>
-      <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
+      <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
+      <button class="btn btn-default">Proceed to Checkout</button>
     </div>
   </div>
-  {{/each}}
-  <div class="left col-md-6">
-    <span class="checkout-totals">Items: </span><span class="totals">{{shoppingCart.items.length}} / </span>
-    <span class="checkout-totals">Total: </span><span class="totals">{{shoppingCart.grandTotal}}</span>
+  {{else}}
+  <div class="empty-cart">
+    <h1>Your cart is empty!</h1>
+    {{#link-to 'new'}}Buy Something!{{/link-to}}
   </div>
-  <div class="right col-md-6">
-    <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
-    <button class="btn btn-default">Proceed to Checkout</button>
-  </div>
-</div>
+{{/if}}

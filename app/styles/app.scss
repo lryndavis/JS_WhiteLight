@@ -16,6 +16,14 @@
 // https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
 // https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
 
+.empty-cart {
+  text-align: center;
+  margin-top: 50px;
+  h1 {
+    padding-bottom: 10px;
+  }
+}
+
 .thumbnail {
   width: 200px;
   border: none;
@@ -23,7 +31,7 @@
 }
 
 .in-cart {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #bfbfbf;
   height: 250px;
   margin-top: 40px;
   font-size: .9em;
