@@ -18,6 +18,6 @@
       <div class="box"> <img src={{product.image4}} class="featured-img" alt="featured-image"/>  </div>
       <div class="box"> <img src={{product.image5}} class="featured-img" alt="featured-image"/> </div> -->
     {{/slick-slider}}
-    <span class ="contact-us">QUESTIONS? CONTACT US</span>
+    <span class ="contact-us">{{#link-to 'contact'}}QUESTIONS? CONTACT US{{/link-to}}</span>
     <button {{action 'addToCart' product}} class="add-cart btn btn-default btn-block">ADD TO CART</button>
 </div>
