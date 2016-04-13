@@ -14,11 +14,21 @@ export default function(){
     this.transition(
     this.fromRoute('category'),
     this.toRoute('product'),
-    this.use('fade')
+    this.use('fade'),
   );
     this.transition(
     this.fromRoute('new'),
     this.toRoute('product'),
-    this.use('fade')
+    this.use('fade'),
+  );
+    this.transition(
+    this.fromRoute('era'),
+    this.toRoute('product'),
+    this.use('fade'),
+  );
+    this.transition(
+    this.fromRoute('size'),
+    this.toRoute('product'),
+    this.use('fade'),
   );
 };
