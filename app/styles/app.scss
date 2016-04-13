@@ -26,9 +26,15 @@
   font-weight: 300;
 }
 
+.nav-link {
+  padding-right: 10px;
+  font-size: .8em;
+}
+
+
 .dropdown a {
   padding-right: 7px;
-  font-size: .75em;
+  font-size: .8em;
   text-decoration: none;
 }
 
@@ -167,7 +173,7 @@
 }
 
 .logo {
-  width: 275px;
+  width: 300px;
 }
 
 .product-tile {
@@ -214,7 +220,7 @@
 }
 
 .navbar {
-  height: 200px;
+  height: 225px;
   text-align: center;
   margin-bottom: 0;
 }
@@ -239,10 +245,6 @@ span.sign-out {
 
 }
 
-.nav-link {
-  padding-right: 10px;
-  font-size: .7em;
-}
 
 .mini-links {
   display: flex;

@@ -8,6 +8,7 @@
     "firebase": "^2.1.0",
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.5.0",
-    "materialize": "~0.97.0"
+    "materialize": "~0.97.0",
+    "dom-ruler": "0.1.13"
   }
 }
