@@ -3,16 +3,21 @@
     <p class="product-price">{{convert-currency product}}</p>
     <p><span class="attr">Era: </span>{{product.era}}</p>
     <p><span class="attr">Size: </span>{{product.size}}</p>
+    <p><span class="attr">Description: </span>{{product.description}}</p>
     <p><span class="attr">Label: </span>{{product.label}}</p>
     <p><span class="attr">Condition: </span>{{product.condition}}</p>
     <p><span class="attr">Materials: </span>{{product.materials}}</p>
-    <p><span class="attr">Description: </span>{{product.description}}</p>
     <p><span class="attr">Measurements: </span>{{product.measurements}}</p>
-    <button {{action 'addToCart' product}} class="add-cart btn btn-default btn-block">ADD TO CART</button>
   </div>
-  <div class="col-md-6">
-    {{#slick-slider autoplay=false arrows=true}}
+
+<div class="col-md-6 info-tile">
+    {{#slick-slider autoplay=true arrows=true}}
       <div class="box"> <img src={{product.image}} class="featured-img" alt="featured-image"/>  </div>
       <div class="box"> <img src={{product.image}} class="featured-img" alt="featured-image"/> </div>
+      <!-- <div class="box"> <img src={{product.image3}} class="featured-img" alt="featured-image"/>  </div>
+      <div class="box"> <img src={{product.image4}} class="featured-img" alt="featured-image"/>  </div>
+      <div class="box"> <img src={{product.image5}} class="featured-img" alt="featured-image"/> </div> -->
     {{/slick-slider}}
-  </div>
+    <span class ="contact-us">QUESTIONS? CONTACT US</span>
+    <button {{action 'addToCart' product}} class="add-cart btn btn-default btn-block">ADD TO CART</button>
+</div>

@@ -25,6 +25,35 @@ body {
 // https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
 // https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
 
+
+.side-nav {
+border-right: 1px solid #bfbfbf;
+height: 650px;
+}
+
+
+
+.info-tile {
+  height: 650px;
+  padding-left: 40px;
+}
+
+.contact-us {
+  padding-top: 40px;
+  text-align: center;
+  display: block;
+  font-size: .9em;
+}
+
+.add-cart {
+  margin-top: 30px;
+  background-color: #800040;
+  color: #fff;
+  padding: 15px;
+  font-size: .8em;
+}
+
+
 .dropdown-link {
   font-size: 1em;
   display: block;
@@ -32,6 +61,23 @@ body {
   padding-left: 10px;
   font-weight: 300;
 }
+
+
+.featured-img {
+  width: 100%;
+}
+
+
+.product-info p {
+  font-size: .65em;
+  padding-left: 10px;
+}
+
+.product-info {
+  padding-right: 10px;
+}
+
+
 
 .cart-link {
   font-size: .7em;
@@ -149,16 +195,10 @@ body {
   margin-bottom: 80px;
 }
 
-.featured-img {
-  width: 100%;
-}
-
 .thumb-img {
   width: 250px;
 }
-.add-cart {
-  margin-top: 30px;
-}
+
 
 .side-nav h2 {
   margin-top: 0;
@@ -169,10 +209,6 @@ body {
   height: 650px;
 }
 
-.product-info p {
-  font-size: .65em;
-  padding-left: 10px;
-}
 
 .product-name {
   font-family: 'Playfair Display';
@@ -282,9 +318,6 @@ span.sign-out {
   width: 100%;
 }
 
-.side-nav {
-border-right: 1px solid #bfbfbf;
-}
 
 h1 {
   font-family: 'Playfair Display';
