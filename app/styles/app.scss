@@ -2,10 +2,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300italic,300,100italic,100|Playfair+Display:400,400italic,700,700italic,900,900italic);
 
 
+
+
 * {
   font-family: 'Roboto';
   font-weight: 100;
   font-size: 1.1em;
+  color: #3A474F;
+}
+
+body {
+  background-color: #F1F1F3;
 }
 
 
@@ -26,17 +33,39 @@
   font-weight: 300;
 }
 
+.cart-link {
+  font-size: .7em;
+  color: #800040;
+}
+
+.shop-by {
+  font-family: 'Playfair Display';
+  font-size: 1.2em;
+  font-style: italic;
+  color: #800040;
+
+  }
+.dropdown a {
+  // color: #800040;
+}
+
 .nav-link {
   padding-right: 10px;
   font-size: .8em;
+  // color: #800040;
 }
 
+.sign-out a {
+  color: #800040;
+}
 
 .dropdown a {
   padding-right: 7px;
   font-size: .8em;
   text-decoration: none;
 }
+
+
 
 .empty-cart {
   text-align: center;
@@ -136,7 +165,7 @@
 }
 
 .product-side-nav {
-  border-right: 1px solid #bfbfbf;
+  border-right: 1px solid #660033;
   height: 650px;
 }
 
@@ -189,11 +218,8 @@
   padding-top: 5px;
 }
 
-.shop-by {
-  font-family: 'Playfair Display';
-  font-size: 1.2em;
-  font-style: italic;
-}
+
+
 
 .product-gallery {
   padding-left: 20px;
@@ -309,9 +335,7 @@ img {
   text-align: right;
 }
 
-.cart-link {
-  font-size: .7em;
-}
+
 
 
 
