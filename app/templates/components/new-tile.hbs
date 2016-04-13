@@ -1,7 +1,7 @@
  {{#if sortedProducts}}
   <div class="paginated-page">
   {{#each pagedContent as |product|}}
-    <div class="col-md-6 product-tile">
+    <div class="col-lg-6 col-md-6 col-sm-8 product-tile">
       {{#link-to 'product' product.id}}<img src={{product.image}} alt="featured-image"/>{{/link-to}}
       <span class="title">{{#link-to 'product' product.id}}{{product.title}}{{/link-to}}</span>
       <span class="price">{{convert-currency product}}</span>
