@@ -1,8 +1,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300italic,300,100italic,100|Playfair+Display:400,400italic,700,700italic,900,900italic);
 
-
-
+// universal styling
 
 * {
   font-family: 'Roboto';
@@ -16,18 +15,118 @@ body {
 }
 
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
 
-// https://img0.etsystatic.com/068/1/8033764/il_fullxfull.794534046_qeqb.jpg     poncho
-// https://img0.etsystatic.com/100/1/8033764/il_570xN.832061350_7riw.jpg     kimono
-// https://img0.etsystatic.com/061/0/8033764/il_fullxfull.779085696_11pg.jpg   white blouse
-// https://img1.etsystatic.com/068/0/8033764/il_fullxfull.765278815_5zjx.jpg fringe suede
-// https://img0.etsystatic.com/050/0/8033764/il_fullxfull.726672842_75fa.jpg red kaftan
-// https://img1.etsystatic.com/055/0/8033764/il_fullxfull.763180709_9mvi.jpg bag
-// https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg medallion
+img {
+  width: 95%;
+}
 
+// header
+
+
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 2em;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-size: 1.5em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.dropdown-link {
+  font-size: 1em;
+  display: block;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-weight: 300;
+}
+
+.cart-link {
+  font-size: .7em;
+  color: #800040;
+}
+
+.nav-link {
+  padding-right: 10px;
+  font-size: .8em;
+}
+
+.dropdown a {
+  padding-right: 7px;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+.sign-out a {
+  color: #800040;
+}
+
+.welcome-message {
+  text-align: center;
+}
+
+
+//side navigation
 
 .side-nav {
 border-right: 1px solid #bfbfbf;
+}
+
+.shop-by {
+  font-family: 'Playfair Display';
+  font-size: 1.2em;
+  font-style: italic;
+  color: #800040;
+}
+
+
+
+
+
+
+//product info dynamic page
+.product-name {
+  font-family: 'Playfair Display';
+  font-size: 1.2em;
+  margin-top: 0;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.product-price {
+  font-weight: 300;
+  padding-bottom: 10px;
+  border-bottom: 1px solid  #bfbfbf;
+}
+
+.attr {
+  font-weight: 300;
 }
 
 .info-tile {
@@ -56,15 +155,6 @@ border-right: 1px solid #bfbfbf;
 }
 
 
-.dropdown-link {
-  font-size: 1em;
-  display: block;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  font-weight: 300;
-}
-
-
 .featured-img {
   width: 100%;
 }
@@ -79,41 +169,25 @@ border-right: 1px solid #bfbfbf;
   padding-right: 10px;
 }
 
-
-
-.cart-link {
-  font-size: .7em;
-  color: #800040;
-}
-
-.shop-by {
-  font-family: 'Playfair Display';
-  font-size: 1.2em;
-  font-style: italic;
-  color: #800040;
-
-  }
-.dropdown a {
-  // color: #800040;
-}
-
-.nav-link {
-  padding-right: 10px;
-  font-size: .8em;
-  // color: #800040;
-}
-
-.sign-out a {
-  color: #800040;
-}
-
-.dropdown a {
-  padding-right: 7px;
-  font-size: .8em;
-  text-decoration: none;
+.product-side-nav {
+  border-right: 1px solid #660033;
 }
 
 
+//cart styling
+
+.your-cart {
+  font-weight: '100';
+}
+
+.cart-item {
+  display: block;
+}
+
+.row {
+  padding-top: 15px;
+  text-align: right;
+}
 
 .empty-cart {
   text-align: center;
@@ -168,12 +242,14 @@ border-right: 1px solid #bfbfbf;
 }
 
 
-
 .no-products {
   text-align: center;
   font-size: 1.4em;
   margin-top: 50px;
 }
+
+// Product Gallery
+
 
 .paginated-page {
   display: flex;
@@ -189,44 +265,34 @@ border-right: 1px solid #bfbfbf;
   text-align: center;
 }
 
-.arrow {
-  color: black;
-}
-
-.main-container {
-  margin-bottom: 80px;
-}
-
 .thumb-img {
   width: 250px;
 }
-
 
 .side-nav h2 {
   margin-top: 0;
 }
 
-.product-side-nav {
-  border-right: 1px solid #660033;
-}
-
-
-.product-name {
-  font-family: 'Playfair Display';
-  font-size: 1.2em;
-  margin-top: 0;
-  font-style: italic;
-  padding-bottom: 10px;
-}
-
-.product-price {
+.sort-by {
   font-weight: 300;
-  padding-bottom: 10px;
-  border-bottom: 1px solid  #bfbfbf;
 }
 
-.attr {
-  font-weight: 300;
+.low {
+  border-right: 1px solid black;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.high {
+  padding-left: 5px;
+  cursor: pointer;
+  border-right: 1px solid #bfbfbf;
+  padding-right: 5px;
+}
+
+.new {
+  padding-left: 5px;
+  cursor: pointer;
 }
 
 .gallery {
@@ -255,32 +321,33 @@ border-right: 1px solid #bfbfbf;
   padding-top: 5px;
 }
 
-
-
+.buttons {
+  font-size: .5em;
+  text-align: right;
+  margin-right: 40px;
+}
 
 .product-gallery {
   padding-left: 20px;
 }
 
-.background-img {
-  width: 600px;
-  height: 80vh;
-  margin-right: 90px;
-  // background-image: url("https://img1.etsystatic.com/058/1/8033764/il_fullxfull.741624475_pf9k.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-
-.background-img2 {
-  margin-top: 70px;
-  height: 60vh;
-  width: 400px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  // background-image: url("https://img1.etsystatic.com/063/1/8033764/il_fullxfull.753573557_n199.jpg");
-}
+// .background-img {
+//   width: 600px;
+//   height: 80vh;
+//   margin-right: 90px;
+//   background-repeat: no-repeat;
+//   background-position: top;
+//   background-size: cover;
+// }
+//
+// .background-img2 {
+//   margin-top: 70px;
+//   height: 60vh;
+//   width: 400px;
+//   background-repeat: no-repeat;
+//   background-position: top;
+//   background-size: cover;
+// }
 
 .navbar {
   height: 225px;
@@ -305,7 +372,6 @@ span.sign-out {
   font-size: .6em;
   display: block;
   padding-bottom: 5px;
-
 }
 
 
@@ -314,63 +380,9 @@ span.sign-out {
 }
 
 .link-bar {
-  // border-top: 1px solid black;
   padding: 0 10px 10px 10px;
   width: 100%;
 }
-
-
-h1 {
-  font-family: 'Playfair Display';
-  font-size: 2em;
-  font-style: italic;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h3 {
-  font-family: 'Roboto';
-  font-size: 1.5em;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
-h4 {
-  font-size: 1.2em;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
-
-a {
-  text-decoration: none;
-  color: black;
-  &:hover {
-    color: black;
-    text-decoration: none;
-  }
-}
-
-img {
-  width: 95%;
-}
-
-//cart div styling
-
-.your-cart {
-  font-weight: '100';
-}
-.cart-item {
-  display: block;
-}
-
-.row {
-  padding-top: 15px;
-  text-align: right;
-}
-
-
-
 
 
 //admin tile styling
@@ -381,44 +393,4 @@ img {
 
 .admin-item {
   padding: 5px;
-}
-
-
-.main-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-//product tile
-
-.buttons {
-  font-size: .5em;
-  text-align: right;
-  margin-right: 40px;
-}
-
-.sort-by {
-  font-weight: 300;
-}
-
-.low {
-  border-right: 1px solid black;
-  padding-right: 5px;
-  cursor: pointer;
-}
-
-.high {
-  padding-left: 5px;
-  cursor: pointer;
-  border-right: 1px solid #bfbfbf;
-  padding-right: 5px;
-}
-
-.new {
-  padding-left: 5px;
-  cursor: pointer;
-}
-
-.welcome-message {
-  text-align: center;
 }
