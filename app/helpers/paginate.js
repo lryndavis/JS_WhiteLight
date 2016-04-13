@@ -6,5 +6,6 @@ export default Ember.Object.extend({
   content: model.products,
 
   // the PagedArray
-  pagedContent: pagedArray('content', {perPage: 6})
+  pagedContent: pagedArray('content', {perPage: 4
+  })
 });

@@ -1,15 +1,4 @@
-<div class="buttons">
-  <span class="sort-by">Sort By: </span>
-  <span class="low" {{action "sortBy" "price:asc"}}>Price - Low to High</span>
-  <span class="high" {{action "sortBy" "price:desc"}}>Price -  High to Low</span>
-  <span class="new" {{action "sortBy" "date:asc"}}>Newest</span>
-</div>
-
-
-
-
-
-{{#if sortedProducts}}
+ {{#if sortedProducts}}
   <div class="paginated-page">
   {{#each pagedContent as |product|}}
     <div class="col-md-6 product-tile">
