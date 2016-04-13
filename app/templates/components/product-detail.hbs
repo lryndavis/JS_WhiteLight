@@ -11,5 +11,8 @@
     <button {{action 'addToCart' product}} class="add-cart btn btn-default btn-block">ADD TO CART</button>
   </div>
   <div class="col-md-6">
-    <img src={{product.image}} class="featured-img" alt="featured-image"/>
+    {{#slick-slider autoplay=false arrows=true}}
+      <div class="box"> <img src={{product.image}} class="featured-img" alt="featured-image"/>  </div>
+      <div class="box"> <img src={{product.image}} class="featured-img" alt="featured-image"/> </div>
+    {{/slick-slider}}
   </div>

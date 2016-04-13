@@ -41,6 +41,9 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
   }
+    ENV.stripe = {
+      key: " pk_test_Q7fjLj1EdYzvfdKVlOJYo8yp"
+    };
 
   if (environment === 'production') {
 

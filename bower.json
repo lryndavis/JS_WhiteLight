@@ -9,6 +9,7 @@
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.5.0",
     "materialize": "~0.97.0",
-    "dom-ruler": "0.1.13"
+    "dom-ruler": "0.1.13",
+    "slick-carousel": "^1.5.9"
   }
 }
