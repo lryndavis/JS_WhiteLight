@@ -1,4 +1,4 @@
-  <div class="col-md-4 product-info">
+  <div class="col-lg-4 col-md-6 product-info">
     <h2 class="product-name">{{product.title}}</h2>
     <p class="product-price">{{convert-currency product}}</p>
     <p><span class="attr">Era: </span>{{product.era}}</p>
@@ -10,7 +10,7 @@
     <p><span class="attr">Measurements: </span>{{product.measurements}}</p>
   </div>
 
-<div class="col-md-6 info-tile">
+<div class="col-lg-6 col-md-6 info-tile">
     {{#slick-slider autoplay=true arrows=true}}
       <div class="box"> <img src={{product.image}} class="featured-img" alt="featured-image"/>  </div>
       <div class="box"> <img src={{product.image}} class="featured-img" alt="featured-image"/> </div>

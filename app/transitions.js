@@ -32,11 +32,6 @@ export default function(){
     this.use('fade'),
   );
     this.transition(
-    this.fromRoute('cart'),
-    this.toRoute('category'),
-    this.use('fade'),
-  );
-    this.transition(
     this.fromRoute('contact'),
     this.toRoute('category'),
     this.use('fade'),
@@ -44,6 +39,11 @@ export default function(){
     this.transition(
     this.fromRoute('contact'),
     this.toRoute('contact'),
+    this.use('fade'),
+  );
+    this.transition(
+    this.fromRoute('cart'),
+    this.toRoute('new'),
     this.use('fade'),
   );
 };

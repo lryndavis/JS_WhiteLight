@@ -77,6 +77,7 @@ a.dropdown-toggle {
 
 .nav-link {
   font-size: .8em;
+  padding-right: 7px;
   &:hover {
     color: #800040;
     font-weight: 300;
@@ -485,5 +486,42 @@ span.sign-out {
   }
   .link-bar {
     display: none;
+  }
+}
+
+@media only screen and ( max-width: 992px ) {
+  .buttons {
+    text-align: left;
+    font-size: .6em;
+    margin-left: 20px;
+    .navbar {
+      height: 175px;
+    }
+    .logo {
+      width: 30%;
+    }
+  }
+}
+
+
+@media only screen and ( max-width: 768px) {
+  .nav-bar {
+    text-align: center;
+  }
+  .logo {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .link-bar {
+    display: block;
+  }
+  .side-nav {
+    display: none;
+  }
+  .product-tile img {
+    width: 50%;
+  }
+  .info-tile img {
+    width: 50%;
   }
 }
