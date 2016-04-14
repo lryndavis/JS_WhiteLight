@@ -12,7 +12,7 @@
 
 body {
   background-color: #F1F1F3;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
@@ -301,6 +301,18 @@ a {
   margin-top: 50px;
 }
 
+.checkout-btn {
+  background-color: #800040;
+  color: #fff;
+  font-size: .4em;
+}
+
+.remove-item {
+  background-color: #3A474F;
+  color: #fff;
+}
+
+
 // Product Gallery
 
 
@@ -389,8 +401,9 @@ a {
 
 .new-arrivals {
   font-family: 'Playfair Display';
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-style: italic;
+  color: #800040;
 }
 
 

@@ -9,7 +9,7 @@
       </div>
       <div class="right col-md-6">
         <span>{{convert-currency item}}</span>
-        <button {{action 'removeFromCart' item}} class="btn btn-default">Remove Item</button>
+        <button {{action 'removeFromCart' item}} class="btn btn-default remove-item">REMOVE ITEM</button>
       </div>
     </div>
     {{/each}}
@@ -18,8 +18,8 @@
       <span class="checkout-totals">Total: </span><span class="totals">{{shoppingCart.grandTotal}}</span>
     </div>
     <div class="right col-md-6">
-      <button {{action 'emptyCart' item}} class="btn btn-danger">Empty Cart</button>
-      <button class="btn btn-default">Proceed to Checkout</button>
+      <button {{action 'emptyCart' item}} class="btn btn-default remove-item">EMPTY CART</button>
+      <button class="btn btn-default checkout-btn">PROCEED TO CHECKOUT</button>
     </div>
   </div>
   {{else}}
