@@ -7,5 +7,5 @@ actions: {
     toggleDropdown() {
         this.toggleProperty('dropdownOpen');
     }
-},
+  },
 });

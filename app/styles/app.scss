@@ -26,7 +26,55 @@ img {
   width: 95%;
 }
 
+a:hover {
+  color: #2445a8;
+}
+
+ul.dropdown-menu {
+  background-color: #F1F1F3;
+}
 // header
+
+
+.side-nav-link {
+  font-size: .6em;
+  display: block;
+  padding-bottom: 5px;
+  &:hover {
+    color: #2445a8;
+    font-weight: 300;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a.nav-link {
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: .8em;
+  &:hover {
+    color: #800040;
+    font-weight: bold;
+  }
+}
+
+a.dropdown-toggle {
+  text-decoration: none;
+  &:hover {
+    color: #800040;
+    font-weight: bold;
+  }
+}
+
+.nav-link {
+  font-size: .8em;
+  &:hover {
+    color: #800040;
+    font-weight: 300;
+  }
+}
 
 
 h1 {
@@ -61,11 +109,16 @@ a {
 }
 
 .dropdown-link {
-  font-size: 1em;
+  font-size: 1.2em;
   display: block;
   padding-bottom: 5px;
   padding-left: 10px;
   font-weight: 300;
+  &:hover {
+    color: #800040;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
 
 .cart-link {
@@ -73,10 +126,7 @@ a {
   color: #800040;
 }
 
-.nav-link {
-  padding-right: 10px;
-  font-size: .8em;
-}
+
 
 .dropdown a {
   padding-right: 7px;
@@ -278,6 +328,10 @@ a {
   border-right: 1px solid black;
   padding-right: 5px;
   cursor: pointer;
+  &:hover {
+    color: #800040;
+    font-weight: bold;
+  }
 }
 
 .high {
@@ -285,11 +339,19 @@ a {
   cursor: pointer;
   border-right: 1px solid #bfbfbf;
   padding-right: 5px;
+  &:hover {
+    color: #800040;
+    font-weight: bold;
+  }
 }
 
 .new {
   padding-left: 5px;
   cursor: pointer;
+  &:hover {
+    color: #800040;
+    font-weight: bold;
+  }
 }
 
 .gallery {
@@ -317,6 +379,13 @@ a {
 .title {
   padding-top: 5px;
 }
+
+.new-arrivals {
+  font-family: 'Playfair Display';
+  font-size: 1.5em;
+  font-style: italic;
+}
+
 
 .buttons {
   font-size: .5em;
@@ -365,11 +434,6 @@ span.sign-out {
   padding-right: 5px;
 }
 
-.side-nav-link {
-  font-size: .6em;
-  display: block;
-  padding-bottom: 5px;
-}
 
 
 .mini-links {
