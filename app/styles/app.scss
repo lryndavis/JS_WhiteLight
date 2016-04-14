@@ -44,14 +44,32 @@ ul.dropdown-menu {
 
 
 .side-nav-link {
+  position: relative;
+  text-decoration: none;
   font-size: .6em;
   display: block;
   padding-bottom: 5px;
+  position: relative;
   &:hover {
-    color: #2445a8;
+    color: #800040;
     font-weight: 300;
   }
 }
+
+.side-nav-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 1px solid #800040;
+  transition: 0.4s;
+}
+
+.side-nav-link:hover:after {
+  width: 30%;
+}
+
 
 a {
   text-decoration: none;

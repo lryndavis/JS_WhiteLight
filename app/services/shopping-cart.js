@@ -13,9 +13,11 @@ export default Ember.Service.extend({
   }),
   add(item) {
     this.get('items').pushObject(item);
+    this.get('item').decrementProperty('quantity', 1);
   },
   remove(item) {
     this.get('items').removeObject(item);
+    this.get('items').incrementProperty('quantity', 1);
   },
   empty() {
     this.get('items').setObjects([]);
