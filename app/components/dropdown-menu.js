@@ -3,9 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   dropdownOpen: false,
 
-actions: {
+  actions: {
     toggleDropdown() {
         this.toggleProperty('dropdownOpen');
-    }
-  },
-});
+      }
+    },
+  });

@@ -7,6 +7,7 @@ export default Ember.Route.extend({
       equalTo: params.era_id
     });
   },
+  
   actions: {
     sortBy: function(sortProperties) {
       this.set('sortProperties', [sortProperties]);

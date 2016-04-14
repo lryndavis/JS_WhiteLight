@@ -7,6 +7,7 @@ export default Ember.Route.extend({
       equalTo: params.size_id
     });
   },
+  
   actions: {
     sortBy: function(sortProperties) {
       this.set('sortProperties', [sortProperties]);
