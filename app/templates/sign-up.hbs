@@ -4,37 +4,21 @@
       <h1>Sign Up</h1>
     </div>
       <fieldset class="form-group">
-        {{input
-            type='text'
-            class='form-control'
-            value=email
-            placeholder='email'
-        }}
+        {{input type='text' class='form-control' value=email placeholder='email'}}
       </fieldset>
+
       <fieldset class="form-group">
-          {{input
-              type='password'
-              class='form-control'
-              value=password
-              placeholder='password'
-          }}
+        {{input type='password' class='form-control' value=password placeholder='password' }}
       </fieldset>
+
       <fieldset class="form-group">
-      {{input
-          type='text'
-          class='form-control'
-          value=firstName
-          placeholder='firstName'
-      }}
-    </fieldset>
+         {{input type='text' class='form-control' value=firstName placeholder='firstName' }}
+      </fieldset>
+
     <fieldset class="form-group">
-      {{input
-          type='text'
-          class='form-control'
-          value=lastName
-          placeholder='lastName'
-      }}
+      {{input type='text' class='form-control' value=lastName placeholder='lastName' }}
     </fieldset>
+
     <button class='btn btn-default btn-block' {{action 'signUp'}} >Sign Up</button>
   </div>
 </div>

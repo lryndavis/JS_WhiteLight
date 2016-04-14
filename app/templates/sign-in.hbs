@@ -5,14 +5,16 @@
     </div>
       <fieldset class="form-group">{{input type='text' class='form-control' value=email placeholder='email'}}
       </fieldset>
+
       <fieldset class="form-group">{{input type='password' class='form-control' value=password placeholder='password'}}
       </fieldset>
+
       {{#if session.isWorking}}
-      <button class='btn btn-default' disabled='disabled'>
-          {{fa-icon 'spinner' spin=true}} Signing in...
-      </button>
+        <button class='btn btn-default' disabled='disabled'>
+            {{fa-icon 'spinner' spin=true}} Signing in...
+        </button>
       {{else}}
-      <button class='btn btn-default btn-block' {{action 'signIn' 'password'}}>Sign In</button>
+        <button class='btn btn-default btn-block' {{action 'signIn' 'password'}}>Sign In</button>
       {{/if}}
     </div>
   </div>

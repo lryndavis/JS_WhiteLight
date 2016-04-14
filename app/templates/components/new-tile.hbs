@@ -2,18 +2,17 @@
   <span class="new-arrivals">New Arrivals</span>
 </div>
 
-
- {{#if sortedProducts}}
+{{#if sortedProducts}}
   <div class="paginated-page">
-  {{#each pagedContent as |product|}}
-    <div class="col-lg-6 col-md-6 col-sm-8 product-tile">
-      {{#link-to 'product' product.id}}<img src={{product.image}} alt="featured-image"/>{{/link-to}}
-      <span class="title">{{#link-to 'product' product.id}}{{product.title}}{{/link-to}}</span>
-      <span class="price">{{convert-currency product}}</span>
+    {{#each pagedContent as |product|}}
+      <div class="col-lg-6 col-md-6 col-sm-8 product-tile">
+        {{#link-to 'product' product.id}}<img src={{product.image}} alt="featured-image"/>{{/link-to}}
+        <span class="title">{{#link-to 'product' product.id}}{{product.title}}{{/link-to}}</span>
+        <span class="price">{{convert-currency product}}</span>
+      </div>
+      {{/each}}
     </div>
-  {{/each}}
-</div>
-{{page-numbers content=pagedContent}}
+  {{page-numbers content=pagedContent}}
   {{else}}
   <h1 class="no-products">Sorry, no products match this description!</h1>
 {{/if}}
