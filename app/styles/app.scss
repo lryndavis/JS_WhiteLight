@@ -22,12 +22,19 @@ body {
   margin-bottom: 80px;
 }
 
-img {
+.product-tile img {
   width: 95%;
+  &:hover {
+    opacity: 0.70;
+  }
 }
 
-a:hover {
-  color: #2445a8;
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 ul.dropdown-menu {
