@@ -38,6 +38,11 @@ export default function(){
   );
     this.transition(
     this.fromRoute('contact'),
+    this.toRoute('new'),
+    this.use('fade'),
+  );
+    this.transition(
+    this.fromRoute('contact'),
     this.toRoute('contact'),
     this.use('fade'),
   );
