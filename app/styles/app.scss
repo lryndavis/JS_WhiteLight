@@ -487,6 +487,7 @@ span.sign-out {
   .link-bar {
     display: none;
   }
+
 }
 
 @media only screen and ( max-width: 992px ) {
@@ -521,7 +522,11 @@ span.sign-out {
   .product-tile img {
     width: 50%;
   }
-  .info-tile img {
+  .info-tile {
     width: 50%;
+  }
+  .product-info {
+    width: 50%;
+    margin-bottom: 20px;
   }
 }
