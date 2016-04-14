@@ -31,4 +31,19 @@ export default function(){
     this.toRoute('product'),
     this.use('fade'),
   );
+    this.transition(
+    this.fromRoute('cart'),
+    this.toRoute('category'),
+    this.use('fade'),
+  );
+    this.transition(
+    this.fromRoute('contact'),
+    this.toRoute('category'),
+    this.use('fade'),
+  );
+    this.transition(
+    this.fromRoute('contact'),
+    this.toRoute('contact'),
+    this.use('fade'),
+  );
 };
