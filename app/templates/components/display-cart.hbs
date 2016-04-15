@@ -20,6 +20,17 @@
     <div class="right col-md-6">
       <button {{action 'emptyCart' item}} class="btn btn-default remove-item">EMPTY CART</button>
       <button class="btn btn-default checkout-btn">PROCEED TO CHECKOUT</button>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="upload" value="1">
+        <input type="hidden" name="business" value="shopwhitelightvintage@gmail.com">
+        {{#each shoppingCart.items as |item index|}}
+          <input type="hidden" name="item_name_{{index}}" value="{{item.title}}">
+        {{/each}}
+        <input type="hidden" name="amount_1" value="{{shoppingCart.grandTotal}}">
+        <input type="submit" value="PayPal">
+      </form>
+
     </div>
   </div>
   {{else}}
