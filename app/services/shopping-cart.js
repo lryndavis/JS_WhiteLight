@@ -12,12 +12,15 @@ export default Ember.Service.extend({
     return `${sign}${(Math.floor(total / 100))}.${(total % 100)}`;
   }),
   add(item) {
-    this.get('items').pushObject(item);
-    this.get('item').decrementProperty('quantity', 1);
+    if (this.get("items").indexOf(item) < 0) {
+      this.get('items').pushObject(item);
+    } else {
+      return "error";
+    }
   },
   remove(item) {
     this.get('items').removeObject(item);
-    this.get('items').incrementProperty('quantity', 1);
+    item.incrementProperty('quantity', 1);
   },
   empty() {
     this.get('items').setObjects([]);
