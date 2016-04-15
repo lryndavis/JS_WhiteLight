@@ -51,4 +51,28 @@ export default function(){
     this.toRoute('new'),
     this.use('fade'),
   );
+    this.transition(
+    this.fromRoute('new'),
+    this.toRoute('contact'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  );
+    this.transition(
+    this.fromRoute('category'),
+    this.toRoute('contact'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  );
+    this.transition(
+    this.fromRoute('category'),
+    this.toRoute('about'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  );
+    this.transition(
+    this.fromRoute('new'),
+    this.toRoute('about'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  );
 };

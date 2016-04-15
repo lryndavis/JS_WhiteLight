@@ -19,7 +19,7 @@
     </div>
     <div class="right col-md-6">
       <button {{action 'emptyCart' item}} class="btn btn-default remove-item">EMPTY CART</button>
-      <button class="btn btn-default checkout-btn">PROCEED TO CHECKOUT</button>
+      <!-- <button class="btn btn-default checkout-btn">PROCEED TO CHECKOUT</button> -->
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="upload" value="1">

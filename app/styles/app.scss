@@ -8,7 +8,10 @@ html {
   min-height: 100%;
 }
 
-
+.about, .contact {
+  height: 300px;
+  margin-top: 40px;
+}
 .footer {
   position: absolute;
   margin: 0 auto;
@@ -42,13 +45,13 @@ html {
 body {
   background-color: #F1F1F3;
   height: 100%;
+ // overflow: hidden;
 }
 
 
 .container {
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .product-tile img {
@@ -258,8 +261,12 @@ a {
 
 
 .featured-img {
-  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+  display: block;
 }
+
 
 .product-info p {
   font-size: .65em;
@@ -465,24 +472,6 @@ a {
 .product-gallery {
   padding-left: 20px;
 }
-
-// .background-img {
-//   width: 600px;
-//   height: 80vh;
-//   margin-right: 90px;
-//   background-repeat: no-repeat;
-//   background-position: top;
-//   background-size: cover;
-// }
-//
-// .background-img2 {
-//   margin-top: 70px;
-//   height: 60vh;
-//   width: 400px;
-//   background-repeat: no-repeat;
-//   background-position: top;
-//   background-size: cover;
-// }
 
 .navbar {
   height: 225px;
