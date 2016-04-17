@@ -6,7 +6,7 @@ By Lauryn Davis
 
 White Light Vintage is an eCommerce site for my business built in ember.js and backed by Firebase; it will serve as my final project in Javascript at Epicodus. It is currently utilizing Paypal as a payment platform, although this will likely be updated in the near future.
 
-View in action on [Heroku]
+View in action on [Heroku](https://secure-waters-85955.herokuapp.com/)
 
 ##Project Objectives
 
