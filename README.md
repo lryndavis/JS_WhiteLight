@@ -1,12 +1,34 @@
-# White-light
+# White Light Vintage
 
-White Light Vintage is a redesign of my business's web shop rendered in ember.js and backed by Firebase; it will serve as my final project at Epicodus.
+By Lauryn Davis
+
+4.16.2016
+
+White Light Vintage is an eCommerce site for my business built in ember.js and backed by Firebase; it will serve as my final project in Javascript at Epicodus. It is currently utilizing Paypal as a payment platform, although this will likely be updated in the near future.
+
+View in action on [Heroku]
+
+##Project Objectives
+
+* Create an attractive eCommerce site in ember.js with a functioning payment platform
+* Data is stored in and retrieved from Ember Data models and Firebase
+* Components are used to create display and behavior for templates
+* Implement user authentication
+* Utilize computed properties, services, and helpers
+
+##Known Bugs
+
+* As of 4.16.2016, user authentication is down due to an unknown bug that likely manifested during a merge. I am currently working on fixing this issue.
+* Dropdown menu will only close when clicked in dropdown component, will stay open if clicked elsewhere on the page. I am currently experimenting with implementing a ember-cli dropdown add on.
+* Checkout system is still very alpha and will be updated with improved functionality, including itemized invoices and dynamically generated shipping costs.
+* Views are a bit wonky on mobile; this issue is currently being remedied.
 
 ##Technologies Used
 
 * Ember
 * Node
 * Bower
+* HTML
 * SCSS
 * Firebase
 * Bootstrap
@@ -35,8 +57,11 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+##### License
 
+*This software is licensed under the MIT license.*
+
+&copy;2016 **Lauryn Davis**
 Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
@@ -48,10 +73,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
