@@ -1,0 +1,76 @@
+// Styling for product gallery grid
+
+.paginated-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+  width: 100%;
+}
+
+.pagination-centered {
+  font-size: .2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.thumb-img {
+  width: 250px;
+}
+
+.gallery {
+  width: 100%;
+  border-top: .5px solid #bfbfbf;
+}
+
+.product-tile {
+  padding: 10px;
+}
+
+.title, .price {
+  font-size: .7em;
+  display: block;
+}
+
+.info-tile {
+  padding-left: 40px;
+}
+
+
+.title {
+  padding-top: 5px;
+}
+
+.buttons {
+  font-size: .5em;
+  text-align: right;
+  margin-right: 40px;
+}
+
+.product-gallery {
+  padding-left: 20px;
+}
+
+.product-tile img {
+  width: 95%;
+  &:hover {
+    opacity: 0.70;
+  }
+}
+
+.featured-img {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+  display: block;
+}
+
+.product-info {
+  padding-right: 10px;
+}
+
+.product-side-nav {
+  border-right: 1px solid #660033;
+}

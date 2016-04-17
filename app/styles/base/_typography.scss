@@ -1,0 +1,118 @@
+//Contains typography styling for all text components
+
+* {
+  font-family: $font-stack--roboto;
+  font-weight: 100;
+  font-size: 1.1em;
+  color: $font-primary;
+}
+
+h1 {
+  font-family: $font-stack--playfair;
+  font-size: 2em;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: $font-stack--roboto;
+  font-size: 1.5em;
+  font-weight: $font-weight--ultralight;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.welcome-message {
+  text-align: center;
+}
+
+.shop-by {
+  font-family: $font-stack--playfair;
+  font-size: 1.2em;
+  font-style: italic;
+  color: $font-accent;
+}
+
+.product-name {
+  font-family: $font-stack--playfair;
+  font-size: 1.2em;
+  margin-top: 0;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.product-price {
+  font-weight: 300;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $border-color;
+}
+
+.attr {
+  font-weight: 300;
+}
+
+.contact-us {
+  padding-top: 40px;
+  text-align: center;
+  display: block;
+  font-size: .9em;
+}
+
+.product-info p {
+  font-size: .65em;
+  padding-left: 10px;
+}
+
+.your-cart {
+  font-weight: '100';
+}
+
+.in-cart {
+  border-bottom: 1px solid $border-color;
+  height: 250px;
+  margin-top: 40px;
+  font-size: .9em;
+}
+
+.checkout-totals {
+  font-family: $font-stack--playfair;
+  font-style: italic;
+}
+
+.your-cart h4 {
+  font-family: $font-stack--playfair;
+  font-style: italic;
+}
+
+.cart-checkout h3 {
+  font-family: $font-stack--playfair;
+  font-style: italic;
+  font-size: 1.8em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.no-products {
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 50px;
+}
+
+.side-nav h2 {
+  margin-top: 0;
+}
+
+.sort-by {
+  font-weight: 300;
+}
+
+.about, .contact {
+  height: 300px;
+  margin-top: 40px;
+}

@@ -1,0 +1,54 @@
+// Media Queries
+
+@media only screen and (max-width: 1100px) {
+  body {
+    overflow: scroll;
+  }
+  .navbar {
+    text-align: left;
+  }
+  .link-bar {
+    display: none;
+  }
+}
+
+@media only screen and ( max-width: 992px ) {
+  .buttons {
+    text-align: left;
+    font-size: .6em;
+    margin-left: 20px;
+    .navbar {
+      height: 175px;
+    }
+    .logo {
+      width: 30%;
+    }
+  }
+}
+
+
+@media only screen and ( max-width: 768px) {
+  .nav-bar {
+    text-align: center;
+  }
+  .logo {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .link-bar {
+    display: block;
+  }
+  .side-nav {
+    display: none;
+  }
+  .product-tile img {
+    width: 50%;
+  }
+  .info-tile {
+    width: 50%;
+  }
+  .product-info {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}

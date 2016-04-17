@@ -1,0 +1,37 @@
+// Styling for main navbar
+
+.contact, .about {
+  text-align: center;
+}
+
+.logo {
+  width: 350px;
+}
+
+.navbar {
+  height: 225px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.shopping-bag {
+  font-size: .85em;
+  text-align: right;
+  margin-left: auto;
+}
+
+span.sign-out {
+  text-align: left;
+  font-size: .7em;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+
+.mini-links {
+  display: flex;
+}
+
+.link-bar {
+  padding: 0 10px 10px 10px;
+  width: 100%;
+}
