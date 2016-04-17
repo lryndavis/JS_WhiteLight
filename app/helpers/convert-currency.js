@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+//as all product prices are entered in cents to firebase, this will convert price to dollars in user view
 export function convertCurrency(params) {
   var value = params[0].get('price'),
      dollars = Math.floor(value / 100),

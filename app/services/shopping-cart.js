@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+//shopping cart service, generates grand total
 export default Ember.Service.extend({
   items: [],
   grandTotal: Ember.computed('items.[]', function(){
@@ -11,6 +12,7 @@ export default Ember.Service.extend({
     }
     return `${sign}${(Math.floor(total / 100))}.${(total % 100)}`;
   }),
+  //will not allow an item to be added to the cart twice (since there is only one of each product)
   add(item) {
     if (this.get("items").indexOf(item) < 0) {
       this.get('items').pushObject(item);
@@ -20,7 +22,6 @@ export default Ember.Service.extend({
   },
   remove(item) {
     this.get('items').removeObject(item);
-    item.incrementProperty('quantity', 1);
   },
   empty() {
     this.get('items').setObjects([]);

@@ -4,7 +4,8 @@ export default Ember.Route.extend({
   model() {
     return this.store.findAll('product');
   },
-  
+
+  //allows admin to update, delete, and create products
   actions: {
     saveProduct(params) {
       var newProduct = this.store.createRecord('product', params);

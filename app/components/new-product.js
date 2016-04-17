@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+//generates a new product from the admin portal
 export default Ember.Component.extend({
   addNewProduct: false,
   actions: {

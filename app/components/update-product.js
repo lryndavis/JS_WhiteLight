@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+//updates product in admin portal 
 export default Ember.Component.extend({
   updateProductForm: false,
   actions: {

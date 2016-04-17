@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+//user auth 
 export default Ember.Controller.extend({
   actions: {
     signIn(provider) {
