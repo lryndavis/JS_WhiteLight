@@ -19,6 +19,7 @@ View in action on [Heroku](https://secure-waters-85955.herokuapp.com/)
 ##Known Bugs
 
 * As of 4.16.2016, user authentication is down due to an unknown bug that likely manifested during a merge. I am currently working on fixing this issue.
+* Product photos need to be edited for size and entered into Firebase in base64 to prevent slider image gallery sizing issue.
 * Dropdown menu will only close when clicked in dropdown component, will stay open if clicked elsewhere on the page. I am currently experimenting with implementing a ember-cli dropdown add on.
 * Checkout system is still very alpha and will be updated with improved functionality, including itemized invoices and dynamically generated shipping costs.
 * Views are a bit wonky on mobile; this issue is currently being remedied.
