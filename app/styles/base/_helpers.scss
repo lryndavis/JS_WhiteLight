@@ -1,0 +1,16 @@
+//Extends
+
+%main-links {
+  text-decoration: none;
+  color: $black;
+}
+
+%link-hover-bold {
+  color: $font-accent;
+  font-weight: bold;
+}
+
+%link-hover-light {
+  color: $font-accent;
+  font-weight: $font-weight--light;
+}

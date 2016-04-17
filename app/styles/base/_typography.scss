@@ -1,11 +1,15 @@
 //Contains typography styling for all text components
 
+//Base typography styling
+
 * {
   font-family: $font-stack--roboto;
   font-weight: 100;
   font-size: 1.1em;
   color: $font-primary;
 }
+
+//Header elements
 
 h1 {
   font-family: $font-stack--playfair;
@@ -28,8 +32,10 @@ h4 {
   text-transform: uppercase;
 }
 
-.welcome-message {
-  text-align: center;
+//Typography styles relevant to gallery view
+
+.side-nav h2 {
+  margin-top: 0;
 }
 
 .shop-by {
@@ -37,6 +43,17 @@ h4 {
   font-size: 1.2em;
   font-style: italic;
   color: $font-accent;
+}
+
+.sort-by {
+  font-weight: 300;
+}
+
+//Typography styles relevant to product pages
+
+.product-info p {
+  font-size: .65em;
+  padding-left: 10px;
 }
 
 .product-name {
@@ -57,6 +74,8 @@ h4 {
   font-weight: 300;
 }
 
+//About/contact pages
+
 .contact-us {
   padding-top: 40px;
   text-align: center;
@@ -64,10 +83,15 @@ h4 {
   font-size: .9em;
 }
 
-.product-info p {
-  font-size: .65em;
-  padding-left: 10px;
+.about, .contact {
+  color: $font-accent;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $border-color;
 }
+
+//Typography styles relating to shopping cart
 
 .your-cart {
   font-weight: '100';
@@ -104,15 +128,8 @@ h4 {
   margin-top: 50px;
 }
 
-.side-nav h2 {
-  margin-top: 0;
-}
+//sign in message
 
-.sort-by {
-  font-weight: 300;
-}
-
-.about, .contact {
-  height: 300px;
-  margin-top: 40px;
+.welcome-message {
+  text-align: center;
 }
